@@ -1,13 +1,13 @@
 # ELK-Florida-US-Demo (Need actual file to test)
 
-1. Clone/download this project into local system and copy the Senthilkumar1.json file to some other location and delete the base file from the logstash folder.
+1. Clone/download this project into local system.
 2. Open Docker container  
 3. Open the command prompt from the root folder where you copied the files and then run the below command
                                  **docker-compose up -d**
 4. Once the all the instances are up and running, Before placing the json data file inside logstash folder, we need to use the script(create_loanbook_index.json) to create the loan book data structure in elasticsearch. This need to run from Postman. Following are the parameters need to considered. 
     ######    HTTP Request Type : PUT 
     ######    URL Pattern : http://localhost:9200/_template/loanbook_index   <br>
-5. Once the structure is created in the ElasticSearch, Need to place the Senthilkumar1.json file into logstash folder. <br>
+5. Once the structure is created in the ElasticSearch, Need to place the input json file into logstash folder. <br>
 6. This is a ELK stack implementation to read Json files from a shared location using Logstash and pushing the same to Elasticsearch. <br>
 7. The Logstash will read the files, creates the index with index _id for each record in Elasticsearch. <br>
 8. Kibana is used to create a Map and view the loan book data with Geolocation information. We can search and view the specific customer details based on latitude and longitude.<br>
