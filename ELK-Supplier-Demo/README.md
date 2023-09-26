@@ -6,7 +6,7 @@
                                  **docker-compose up -d**
 4. Once the all the instances are up and running, Before placing the json data file inside logstash folder, we need to use the script(create_vichara_index.json) to create the vichara flood data structure in elasticsearch. This need to run from Postman. Following are the parameters need to considered. 
     ######    HTTP Request Type : PUT 
-    ######    URL Pattern : http://localhost:9200/_template/vichara_index   <br>
+    ######    URL Pattern : http://localhost:9200/_template/supplier_index   <br>
 5. Once the structure is created in the ElasticSearch, Need to place the input.json(say input json file name : vichara-data.json) file into logstash folder. <br>
 6. This is a ELK stack implementation to read Json files from a shared location using Logstash and pushing the same to Elasticsearch. <br>
 7. The Logstash will read the files, creates the index with index _id for each record in Elasticsearch. <br>
