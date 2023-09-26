@@ -1,0 +1,229 @@
+{
+  "index_patterns":["loanbook_index"],
+   "settings":{
+       "index":{
+	        "number_of_shards":"1",
+	       "number_of_replicas":"0"
+     }
+  },
+  "mappings": {
+    "properties": {
+	  "job_run_timestamp": {
+        "type": "date"
+      },      
+	  "ecad_id": {
+        "type": "integer"
+      },
+	  "building_id": {
+        "type": "integer"
+      },	  	  
+     "address_line_1": {
+     	"type": "text"
+       },
+     "address_line_2": {
+     	"type": "text"
+       },
+     "address_line_3": {
+     	"type": "text"
+       },
+     "address_line_4": {
+     	"type": "text"
+       },
+     "address_line_5": {
+     	"type": "text"
+       },
+     "address_line_6": {
+     	"type": "text"
+       },
+	 "etrs89_lat":{
+     	"type": "float"
+       },
+	 "etrs89_long":{
+     	"type": "float"
+       },
+	  "ber_rating": {
+     	"type": "text"
+       },
+     "ber_rating_kwh":{
+     	"type": "text"
+       },
+     "co2_emission":{
+     	"type": "float"
+       },
+     "riverrp":{
+     	"type": "float"
+       },
+     "rmax20":{
+     	"type": "float"
+       },
+     "rmax75":{
+     	"type": "float"
+       },
+     "rmax100":{
+     	"type": "float"
+       },
+     "rmax200":{
+     	"type": "float"
+       },
+     "rmax1000":{
+     	"type": "float"
+       },
+     "sop_ri":{
+     	"type": "float"
+       },
+     "coastaludrp":{
+     	"type": "float"
+       },
+     "cudmax75":{
+     	"type": "float"
+       },
+     "cudmax100":{
+     	"type": "float"
+       },
+     "cudmax200":{
+     	"type": "float"
+       },
+     "cudmax1000":{
+     	"type": "float"
+       },
+     "swaterrp":{
+     	"type": "float"
+       },
+     "swmax75":{
+     	"type": "float"
+       },
+     "swmax200":{
+     	"type": "float"
+       },
+     "swmax1000":{
+     	"type": "float"
+       },
+     "model_river":{
+     	"type": "text"
+       },
+     "model_coastal":{
+     	"type": "text"
+       },
+     "model_sw":{
+     	"type": "text"
+       },
+     "r20matrix":{
+     	"type": "float"
+       },
+     "r75matrix":{
+     	"type": "float"
+       },
+     "r100matrix":{
+     	"type": "float"
+       },
+     "r200matrix":{
+     	"type": "float"
+       },
+     "r1000matrix":{
+     	"type": "float"
+       },
+     "cud75matrix":{
+     	"type": "float"
+       },
+     "cud100matrix":{
+     	"type": "float"
+       },
+     "cud200matrix":{
+     	"type": "float"
+       },
+     "cud1000matrix":{
+     	"type": "float"
+       },
+     "sw75matrix":{
+     	"type": "float"
+       },
+     "sw200matrix":{
+     	"type": "float"
+       },
+     "sw1000matrix":{
+     	"type": "float"
+       },
+     "river_floodscore_ud":{
+     	"type": "float"
+       },
+     "coastal_floodscore_ud":{
+     	"type": "float"
+       },
+     "surfacewater_floodscore_ud":{
+     	"type": "float"
+       },
+     "river_floodscore_def":{
+     	"type": "float"
+       },
+     "floodscore_ud":{
+     	"type": "float"
+       },
+     "floodscore_def":{
+     	"type": "float"
+       },
+     "unflood_value":{
+     	"type": "float"
+       },
+     "unflood_heightband":{
+     	"type": "text"
+       },
+     "floodability_index_ud":{
+     	"type": "text"
+       },
+     "floodability_index_def":{
+     	"type": "text"
+       },
+     "Asset_id":{
+     	"type": "integer"
+       },
+     "product":{
+     	"type": "text"
+       },
+     "term":{
+     	"type": "integer"
+       },
+     "Rate/Margin":{
+     	"type": "float"
+       },
+     "Disbursment_Date":{
+     	"type": "text"
+       },
+     "Closing_Date":{
+     	"type": "text"
+       },
+     "Initial_Borrow_Capital":{
+     	"type": "float"
+       },
+     "LTV":{
+     	"type": "float"
+       },
+     "Monthly_Repayment":{
+     	"type": "float"
+       },
+     "Next_Payment_Due":{
+     	"type": "float"
+       },
+     "Monthly_Capital_Repayment":{
+     	"type": "float"
+       },
+     "Months_Paid":{
+     	"type": "integer"
+       },
+     "Months_Due":{
+     	"type": "integer"
+       },
+     "Property_Valuation":{
+     	"type": "float"
+       },
+     "Initial_Deposit":{
+     	"type": "float"
+       },
+     "Mortgage_Outstanding_Balance":{
+     	"type": "float"
+       },	  
+     "location": {
+     	"type": "geo_point"
+	 }	
+	}
+  }
+}
