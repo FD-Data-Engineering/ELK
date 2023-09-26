@@ -1,0 +1,203 @@
+{
+  "index_patterns":["supplier_index"],
+   "settings":{
+       "index":{
+	        "number_of_shards":"1",
+	       "number_of_replicas":"0"
+     }
+  },
+  "mappings": {
+    "properties": {
+	  "id": {
+     	"type": "text"
+      },
+	  "loan_id": {
+     	"type": "text"
+      },
+	  "latitude": {
+     	"type": "float"
+      },
+	   "longitude": {
+     	"type": "float"
+      },
+	  "river_floodscore_def": {
+        "type": "integer"
+      },
+	  "coastal_floodscore_ud": {
+        "type": "integer"
+      },
+	   "surfacewater_floodscore_ud": {
+        "type": "integer"
+      },
+	  "floodscore_def": {
+        "type": "integer"
+      },
+	   "floodscore_ud": {
+        "type": "integer"
+      },
+	  "river_floodscore_def_rcp45_2050": {
+        "type": "integer"
+      },	   
+	   "river_floodscore_ud_rcp45_2050": {
+        "type": "integer"
+      },
+	  "surfacewater_floodscore_ud_rcp45_2050": {
+        "type": "integer"
+      },
+	   "river_floodscore_def_rcp85_2050": {
+        "type": "integer"
+      },
+	  "river_floodscore_ud_rcp85_2050": {
+        "type": "integer"
+      },	  
+	   "surfacewater_floodscore_ud_rcp85_2050": {
+        "type": "integer"
+      },
+	  "asofmon": {
+        "type": "text"
+      },
+	   "servicer_name": {
+        "type": "text"
+      },
+	  "loan_age": {
+        "type": "integer"
+      },
+	  
+	   "rem_months_legal_maturity": {
+        "type": "integer"
+      },
+	  "adj_rem_months_maturity": {
+        "type": "integer"
+      },
+	   "cur_delinquency_status": {
+        "type": "integer"
+      },
+	  "payment_history": {
+        "type": "integer"
+      },
+	  "cur_int_rate": {
+        "type": "float"
+      },
+	  "cur_actual_upb": {
+	  		"type": "float"
+	  	},
+	  "cur_int_bearing_upb": {
+	  		"type": "float"
+	  	},
+	  "upb_at_removal": {
+	  		"type": "float"
+	  	},
+	  "zero_bal_code": {
+	  		"type": "integer"
+	  	},
+	  "zero_bal_date": {
+	  		"type": "text"
+	  	},
+	  "due_date_last_p_i": {
+	  		"type": "text"
+	  	},
+	  "mi_cancellation_indicator": {
+	  		"type": "integer"
+	  	},
+	  "estimated_ltv": {
+	  		"type": "integer"
+	  	},
+	  "credit_score_current_fico": {
+	  		"type": "integer"
+	  	},
+	  "updated_credit_score_2": {
+	  		"type": "integer"
+	  	},
+	  "mod_no": {
+	  		"type": "integer"
+	  	},
+	  "group_number": {
+        "type": "integer"
+      },
+	  "enhanced_relief_refi_indicator": {
+        "type": "integer"
+      },
+	  "borrower_assistance_plan": {
+        "type": "integer"
+      },
+	  "product_type": {
+        "type": "text"
+      },
+	  "seller_name": {
+        "type": "text"
+      },
+	  "property_state": {
+        "type": "text"
+      },
+	  "msa": {
+        "type": "integer"
+      },
+	  "first_pay_date": {
+        "type": "text"
+      },
+	  "maturity_date": {
+        "type": "text"
+      },
+	  "orig_loan_term": {
+        "type": "integer"
+      },
+	  "orig_int_rate": {
+        "type": "float"
+      },
+	  "orig_upb": {
+        "type": "integer"
+      },
+	  "upb_issuance": {
+        "type": "float"
+      },
+	  "loan_purpose": {
+        "type": "text"
+      },
+	  "channel": {
+        "type": "text"
+      },
+	  "property_type": {
+        "type": "text"
+      },
+	  "number_of_units": {
+        "type": "integer"
+      },
+	  "occupancy_status": {
+        "type": "text"
+      },
+	  "number_of_borrowers": {
+        "type": "integer"
+      },
+	  "first_buyer_indicator": {
+        "type": "text"
+      },
+	  "pre_payment_penalty_indicator": {
+        "type": "text"
+      },
+	  "credit_score_origination": {
+        "type": "integer"
+      },
+	  "orig_ltv": {
+        "type": "integer"
+      },
+	  "orig_cltv": {
+        "type": "integer"
+      },
+	  "orig_dti": {
+        "type": "integer"
+      },
+	  "mi_pct": {
+        "type": "integer"
+      },
+	  "mtg_insurance_type": {
+        "type": "integer"
+      },
+	  "property_zip": {
+        "type": "integer"
+      },	  
+	  "location": {
+     	"type": "geo_point"
+	  }		  	
+	}
+  }
+}
