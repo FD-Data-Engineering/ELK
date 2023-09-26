@@ -1,5 +1,5 @@
 {
-  "index_patterns":["vichara_index"],
+  "index_patterns":["supplier_index"],
    "settings":{
        "index":{
 	        "number_of_shards":"1",
